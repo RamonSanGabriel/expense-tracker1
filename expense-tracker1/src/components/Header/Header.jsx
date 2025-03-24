@@ -20,7 +20,7 @@ const Header = () => {
         <p className={css.label}>{label}</p>
         <h1 className={css.title}>
           Manage Your{' '}
-          <a>
+          <a href="/">
             <span>Finances</span>
           </a>{' '}
           Masterfully!
