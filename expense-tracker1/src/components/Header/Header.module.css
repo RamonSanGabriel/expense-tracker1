@@ -37,12 +37,50 @@
   margin-bottom: 1.875rem;
 }
 .mainImage {
-  /* position: absolute; */
+  position: absolute;
   width: 335px;
   height: 381px;
-  /* left: 20px; */
-  /* top: 411px; */
+  left: 20px;
+  top: 411px;
   border-radius: 20px;
   margin-top: 38px;
   /* margin-bottom: 38px; */
+}
+.mainBalance {
+  position: absolute;
+  width: 248px;
+  height: 81px;
+  left: 10px;
+  top: 651px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0c0d0d;
+  background-color: #fafafa;
+  border-radius: 20px;
+  font-size: 0.75rem;
+
+  /* & span p {
+    align-items: end;
+    } */
+}
+.mainBalanceContainer {
+  display: flex;
+  gap: 12px;
+  align-items: end;
+}
+.balanceIcon {
+  width: 36px;
+  height: 36px;
+  left: 20px;
+  top: 22px;
+
+  background: #0ef387;
+  border-radius: 10px;
+}
+.totalBalance {
+  & span {
+    font-size: 1.125rem;
+    font-weight: 900;
+  }
 }

@@ -1,6 +1,7 @@
 import css from './Header.module.css';
 import { main, heroSection, mainImages } from '../../data/main.js';
 import MainBtn from '../Buttons/MainBtn/MainBtn.jsx';
+import { MdArrowOutward } from 'react-icons/md';
 
 const Header = () => {
   const { label, title, description } = heroSection;
@@ -30,6 +31,22 @@ const Header = () => {
       <MainBtn />
       <div className={css.mainImageWrapper}>
         <img className={css.mainImage} src={imgName} />
+      </div>
+      <div className={css.mainBalance}>
+        <div className={css.mainBalanceContainer}>
+          <div>
+            <MdArrowOutward className={css.balanceIcon} />
+          </div>
+          <div>
+            <ul className={css.balanceList}>
+              <li>Your Balance</li>
+              <li className={css.totalBalance}>
+                <span>$632.000</span>
+              </li>
+            </ul>
+          </div>
+          <span>+1.29%</span>
+        </div>
       </div>
     </>
   );
