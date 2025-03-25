@@ -37,14 +37,15 @@
   margin-bottom: 1.875rem;
 }
 .mainImage {
-  position: absolute;
+  /* position: absolute; */
   width: 335px;
   height: 381px;
-  left: 20px;
-  top: 411px;
+  /* left: 20px; */
+  /* top: 411px; */
   border-radius: 20px;
-  margin-top: 38px;
-  /* margin-bottom: 38px; */
+  margin-top: 32px;
+  margin-bottom: 20px;
+  /* background: url('../../images/MainImage.jpg') no-repeat; */
 }
 .mainBalance {
   position: absolute;
