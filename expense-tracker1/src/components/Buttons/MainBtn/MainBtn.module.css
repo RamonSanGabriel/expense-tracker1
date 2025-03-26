@@ -1,6 +1,7 @@
 .mainBtn {
   display: flex;
   gap: 20px;
+  color: var(--PRIMARY-FONT);
 }
 .button {
   display: flex;

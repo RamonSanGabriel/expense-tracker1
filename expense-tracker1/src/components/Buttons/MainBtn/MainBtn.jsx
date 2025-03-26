@@ -9,7 +9,7 @@ const MainBtn = () => {
   return (
     <div className={css.mainBtn}>
       <button className={`${css.button} ${css.signUp}`}>{signUp}</button>
-      <Link to={console.log('path')}>
+      <Link to={console.log('sign in')}>
         <button className={`${css.button} ${css.signIn}`}>{signIn}</button>
       </Link>
     </div>
