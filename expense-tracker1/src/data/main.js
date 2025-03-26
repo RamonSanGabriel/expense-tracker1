@@ -22,3 +22,9 @@ export const buttons = {
 export const mainImages = {
   imgName: mainImage,
 };
+
+export const signUp = {
+  label: 'Sign Up',
+  description:
+    'Step into a world of hassle-free expense management! Your journey towards financial mastery begins here.',
+};

@@ -1,11 +1,7 @@
 import css from './Header.module.css';
-import { main, heroSection, mainImages } from '../../data/main.js';
-import MainBtn from '../Buttons/MainBtn/MainBtn.jsx';
-import { MdArrowOutward } from 'react-icons/md';
+import { main } from '../../data/main.js';
 
 const Header = () => {
-  const { label, title, description } = heroSection;
-  const { imgName } = mainImages;
   return (
     <>
       <header>
@@ -17,37 +13,6 @@ const Header = () => {
           ))}
         </ul>
       </header>
-      <section className={` ${css.section} ${css.hero}`}>
-        <p className={css.label}>{label}</p>
-        <h1 className={css.title}>
-          Manage Your{' '}
-          <a href="/">
-            <span>Finances</span>
-          </a>{' '}
-          Masterfully!
-        </h1>
-        <p className={css.description}>{description}</p>
-      </section>
-      <MainBtn />
-      <div className={css.mainImageWrapper}>
-        <img className={css.mainImage} src={imgName} />
-      </div>
-      <div className={css.mainBalance}>
-        <div className={css.mainBalanceContainer}>
-          <div>
-            <MdArrowOutward className={css.balanceIcon} />
-          </div>
-          <div>
-            <ul className={css.balanceList}>
-              <li>Your Balance</li>
-              <li className={css.totalBalance}>
-                <span>$632.000</span>
-              </li>
-            </ul>
-          </div>
-          <span>+1.29%</span>
-        </div>
-      </div>
     </>
   );
 };
