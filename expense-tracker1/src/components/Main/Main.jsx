@@ -22,23 +22,23 @@ const Main = () => {
       </section>
       <MainBtn />
       <div className={css.mainImageWrapper}>
-        <img className={css.mainImage} src={imgName} />
-      </div>
-      <div className={css.mainBalance}>
-        <div className={css.mainBalanceContainer}>
-          <div>
-            <MdArrowOutward className={css.balanceIcon} />
-          </div>
-          <div>
-            <ul className={css.balanceList}>
-              <li>Your Balance</li>
-              <li className={css.totalBalance}>
-                <span>$632.000</span>
-              </li>
-            </ul>
-          </div>
-          <span>+1.29%</span>
+        <div className={css.mainBalance}>
+          {/* <div className={css.mainBalanceContainer}> */}
+          {/* <div> */}
+          <MdArrowOutward className={css.balanceIcon} />
+          {/* </div> */}
+          {/* <div> */}
+          <ul className={css.balanceList}>
+            <li>Your Balance</li>
+            <li className={css.totalBalance}>
+              <span className={css.amount}>$632.000</span>
+            </li>
+          </ul>
+          {/* </div> */}
+          <span className={css.percentage}>+1.29%</span>
+          {/* </div> */}
         </div>
+        <img className={css.mainImage} src={imgName} />
       </div>
     </>
   );

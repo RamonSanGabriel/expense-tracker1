@@ -26,16 +26,21 @@
 }
 
 .description {
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.875rem; /* 30px */
+}
+.mainImageWrapper {
+  position: relative;
+  margin-top: 32px;
 }
 .mainImage {
   /* position: absolute; */
   width: 335px;
   height: 381px;
-  /* left: 20px; */
+  left: 20px;
   /* top: 411px; */
+  /* top: 0px; */
   border-radius: 20px;
-  margin-top: 32px;
+  object-fit: cover;
   /* margin-bottom: 20px; */
   /* background: url('../../images/MainImage.jpg') no-repeat; */
 }
@@ -44,25 +49,27 @@
   width: 248px;
   height: 81px;
   left: 10px;
+  top: 261px;
+  padding: 20px;
   /* top: 651px; */
-  top: 711px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: flex-end;
   color: #0c0d0d;
   background-color: #fafafa;
   border-radius: 20px;
   font-size: 0.75rem;
+  gap: 12px;
 
   /* & span p {
     align-items: end;
     } */
 }
-.mainBalanceContainer {
+/* .mainBalanceContainer {
   display: flex;
   gap: 12px;
   align-items: end;
-}
+} */
 .balanceIcon {
   width: 36px;
   height: 36px;
@@ -72,9 +79,19 @@
   background: #0ef387;
   border-radius: 10px;
 }
-.totalBalance {
-  & span {
-    font-size: 1.125rem;
-    font-weight: 900;
-  }
+
+.percentage {
+  /* font-size: 0.75rem; */
+  font-weight: 900;
+  position: absolute;
+  width: 58px;
+  height: 22px;
+  left: 160px;
+  top: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(2, 177, 90, 0.15);
+  border-radius: 13px;
 }

@@ -2,10 +2,12 @@
   display: flex;
   gap: 20px;
   color: var(--PRIMARY-FONT);
+  line-height: 1rem;
+  letter-spacing: -0.02em;
 }
 .button {
   display: flex;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   justify-content: center;
   align-items: center;
   /* padding: 14px 44px; */
@@ -13,17 +15,24 @@
   height: 44px;
   border-radius: 40px;
   font-size: var(--REGULAR-FONT);
-
+  border: 1px solid rgba(250, 250, 250, 0.4);
+  transition: all 250ms ease-in;
   /* flex-direction: row; */
   /* gap: 10px; */
 
   /* position: absolute; */
   /* left: 20px; */
   /* top: 20px; */
+
+  &:hover {
+    border: 1px solid #0ef387;
+  }
 }
 .signUp {
   background: #0ef387;
   color: #0c0d0d;
 }
-
+.signIn a {
+  color: var(--PRIMARY-FONT);
+}
 /* Main Balance */
