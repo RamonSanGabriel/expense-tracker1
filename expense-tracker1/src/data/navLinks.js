@@ -1,18 +1,22 @@
 export const navLinks = [
+  // {
+  //   id: 1,
+  //   name: 'Home',
+  //   path: '/',
+  // },
   {
-    name: 'Home',
-    path: '/',
-  },
-  {
+    id: 2,
     name: 'Sign Up',
     path: 'sign-up',
   },
   {
+    id: 3,
     name: 'Sign In',
     path: 'sign-in',
   },
-  {
-    name: 'Not Found',
-    path: 'not-found',
-  },
+  // {
+  //   id: 4,
+  //   name: 'Not Found',
+  //   path: 'not-found',
+  // },
 ];
